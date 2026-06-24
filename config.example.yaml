@@ -1,0 +1,46 @@
+# WebMonkey Configuration - Example
+# "See your network. Know your network."
+
+# Name of the application banner
+app_name: "WebMonkey"
+
+# Target local CIDR to scan for inventory
+scan_cidr: "192.168.1.0/24"
+
+# Interval between automated background scans (e.g., 30s, 5m, 1h)
+scan_interval: "5m"
+
+# Timeout per host probe (e.g., 200ms, 500ms, 1s)
+timeout: "1s"
+
+# Number of concurrent IP scanning workers
+concurrency: 64
+
+# Toggle optional safe port scan of discovered online hosts (disabled by default)
+port_scan_enabled: false
+
+# Safe common TCP ports to probe if port scan is enabled
+ports_list:
+  - 21   # FTP
+  - 22   # SSH
+  - 23   # Telnet (common legacy)
+  - 25   # SMTP
+  - 80   # HTTP
+  - 110  # POP3
+  - 135  # MSRPC
+  - 139  # NetBIOS-SSN
+  - 443  # HTTPS
+  - 445  # Microsoft-DS (SMB)
+  - 1433 # MS-SQL
+  - 3306 # MySQL
+  - 3389 # RDP (Windows Remote Desktop)
+  - 8080 # HTTP Alternative
+
+# SQLite database path for persistence
+db_path: "webmonkey.db"
+
+# Logger detail level (debug, info, warn, error)
+log_level: "info"
+
+# Visual Theme for TUI (dark, light, matrix)
+theme: "dark"
