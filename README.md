@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # WebMonkey
 
 See your network. Know your network.
@@ -34,3 +35,6 @@ Copy `config.example.yaml` to `config.yaml` and adjust settings.
 
 ## License
 MIT
+=======
+# WebMonkey
+>>>>>>> origin/main
