@@ -1,0 +1,21 @@
+# Binaries
+webmonkey
+webmonkey.exe
+
+# Databases
+*.db
+*.sqlite
+*.sqlite-journal
+
+# Logs
+*.log
+
+# Configuration
+# It's good practice to not commit your local config if it contains secrets.
+# You can commit config.example.yaml instead.
+config.yaml
+
+# IDE / Editor folders
+.vscode/
+.idea/
+.DS_Store
